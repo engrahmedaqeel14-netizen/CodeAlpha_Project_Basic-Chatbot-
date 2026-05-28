@@ -105,8 +105,8 @@ def chat():
 
             print(f"PyBot : {response}\n")
 
-        except KeyboardInterrupt:
-            print("\nPyBot : Goodbye! 👋 (Ctrl+C detected)")
+        except (KeyboardInterrupt, EOFError):
+            print("\nPyBot : Goodbye! 👋 (Exit detected)")
             break
 
 
